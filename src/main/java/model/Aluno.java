@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Locale;
+
 public class Aluno {
 	
 	private String nome;
@@ -31,7 +33,7 @@ public class Aluno {
 
 	@Override
 	public String toString() {
-		return "Aluno: " + nome + " | Nota: " + String.format("%.2f", nota) + ".";
+		return "Aluno: " + nome + " | Nota: " + String.format(Locale.US ,"%.2f", nota) + ".";
 	}
 	
 }

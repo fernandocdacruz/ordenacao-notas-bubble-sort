@@ -12,6 +12,16 @@ public class Turma {
         this.alunos = new Aluno[tamanho];
     }	
 	
+	public Aluno[] getAlunos() {
+		return alunos;
+	}
+
+	public void setAlunos(Aluno[] alunos) {
+		this.alunos = alunos;
+	}
+
+
+
 	public void adicionarAlunosAturma(Scanner scanner) {
 		System.out.println("\nCadastro dos alunos e suas respectivas notas:");
 		for (int i = 0; i < alunos.length; i++) {
