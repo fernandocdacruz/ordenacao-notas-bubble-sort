@@ -1,0 +1,13 @@
+1. static int[] bolhaRecursiva(int[] v, int n){
+2. while(n >= 1){
+3. for(int i=0;i<n-l; i++){
+4. if(v[i] > v[i+l]){
+5. int aux = v[i];
+6. v[i] = v[i+l];
+7. v[i+l] = aux;
+8- }
+9- }
+10. return bolhaRecursiva(v, n - 1);
+11- }
+12. return v;
+13. }
